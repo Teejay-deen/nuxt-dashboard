@@ -10,8 +10,8 @@
           <h3 class="mt-2">Abuja</h3>
         </div>
       </header>
-      <div class="shadow-xl bg-white  h-96 w-96 rounded-lg mb-10 mt-3">
-        <h1 class="font-bold text-center py-5">Welcome to Tespire Public</h1>
+      <div class="shadow-xl bg-white   w-96 rounded-lg mb-10 mt-3">
+        <h1 class="font-bold text-center text-2xl py-5">Welcome to Tespire Public</h1>
         <h3 class="text-center ">Enter your details to login to the account</h3>
 
         <form action="" class="mt-1 mx-6 mb-11">

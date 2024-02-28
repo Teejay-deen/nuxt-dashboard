@@ -11,10 +11,10 @@
         </div>
       </header>
       <div class="shadow-xl bg-white h-72 w-96 rounded-lg mb-10 mt-3">
-        <h1 class="font-bold text-center py-5">Welcome to Tespire Public</h1>
+        <h1 class="font-bold text-center text-2xl py-5">Welcome to Tespire Public</h1>
         <h3 class="text-center">Please Select your role to proceed</h3>
 
-        <form action="" class="mt-5 mx-6 mb-11">
+        <form action="" class="mt-2 mx-6 mb-11">
           <div>
             <button 
             class="bg-gray-200 w-full p-1 mt-1 text-center flex text-white rounded-lg hover:opacity-90"
