@@ -14,8 +14,7 @@
         </div>
         <h1 class="font-bold text-center text-2xl">Success!</h1>
         <h3 class="text-center mx-5">
-          We have sent you the email to reset your password. Follow the link in
-          the email to create a new password
+          Password has been change successfully
         </h3>
 
         <div action="" class="mt-5 mx-6 mb-11">

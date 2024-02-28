@@ -6,6 +6,7 @@
     <ForgotPassword />
     <SuccessPage />
     <NewPassword />
+    <PaaswordSuccess />
     <!-- <div>SIDE BAR</div>
     <main>Main section</main>
     <div>profile photos and reminders</div> -->
