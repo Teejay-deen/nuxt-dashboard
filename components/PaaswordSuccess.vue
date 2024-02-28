@@ -24,7 +24,7 @@
           <button
             class="bg-blue-700 w-full p-2 mt-5 text-center text-white rounded-lg hover:opacity-90"
           >
-            Got it
+            Login
           </button>
           <footer class="text-center mt-8">
             <span class="mb-6">(c) 2024 Tespaire, all right reserved</span>

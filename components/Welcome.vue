@@ -1,5 +1,5 @@
 <template>
-  <div class="grid lg:grid-cols-2 h-screen justify-center">
+  <div class="grid lg:grid-cols-2flex-1 justify-center">
     <div
       class="place-self-center w-full p-8 md:px-16 lg:px-24 xl:px-36 2xl:px-52"
     >
@@ -10,8 +10,8 @@
           <h3 class="mt-3">Abuja</h3>
         </div>
       </header>
-      <div class="shadow-xl rounded-lg mb-10 mt-3">
-        <h1 class="font-bold text-center">Welcome to Tespire Public</h1>
+      <div class="shadow-xl bg-white h-72 w-96 rounded-lg mb-10 mt-3">
+        <h1 class="font-bold text-center py-5">Welcome to Tespire Public</h1>
         <h3 class="text-center">Please Select your role to proceed</h3>
 
         <form action="" class="mt-5 mx-6 mb-11">

@@ -1,10 +1,10 @@
 <template>
-  <div class="grid lg:grid-cols-2 h-screen justify-center">
+  <div class="grid lg:grid-cols-2flex-1 justify-center">
     <div
       class="place-self-center w-full p-8 md:px-16 lg:px-24 xl:px-36 2xl:px-52"
     >
-      <div class="shadow-xl rounded-lg mb-10 mt-3">
-        <h1 class="font-bold text-center">Reset Password</h1>
+      <div class="shadow-xl bg-white w-96 h-96 rounded-lg mb-10 ">
+        <h1 class="font-bold text-center py-5">Reset Password</h1>
         <h3 class="text-center mx-6">
           Enter the email account associated with your Tespire public account
           and we will send a link to your email account
