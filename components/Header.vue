@@ -45,7 +45,7 @@
             />
           </div>
           <span class="justify-end flex text-blue-500 cursor-pointer">Forgot Password</span>
-          <button class="bg-slate-700 w-full p-3 mt-1 text-center text-white rounded-lg hover:opacity-90">Login</button>
+          <button class="bg-slate-700 w-full p-2 mt-1 text-center text-white rounded-lg hover:opacity-90">Login</button>
           <footer class="text-center mt-8">
             <span class="m">(c) 2024 Tespaire, all right reserved</span>
           </footer>

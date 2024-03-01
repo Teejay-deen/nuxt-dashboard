@@ -1,14 +1,14 @@
 <template>
   <div class="bg-grey-600">
 
-    <Header />
+    <!-- Headers -->
+    <Headers />
+    <!-- <Header />
     <Welcome />
     <ForgotPassword />
     <SuccessPage />
     <NewPassword />
-    <PaaswordSuccess />
-    <!-- <div>SIDE BAR</div>
-    <main>Main section</main>
-    <div>profile photos and reminders</div> -->
+    <PaaswordSuccess /> -->
+    
   </div>
 </template>
