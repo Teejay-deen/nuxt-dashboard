@@ -45,7 +45,7 @@
           <input
             type="search"
             id="default-search"
-            class="block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-2xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Search..."
             required
           />
@@ -61,7 +61,7 @@
       <!-- Right side of nav bar -->
       <div class="flex items-center gap-5">
         <button
-          @onclick="toggleThemes"
+          @click="toggleThemes"
           aria-label="toggle theme"
           class="flex w-9 shrink-0 items-center justify-center rounded-full border bg-red"
         >
@@ -77,11 +77,12 @@
             <img
               src="/assets/image/Notri.webp"
               alt="Logged user"
-              class="w-full h-full bg-white"
+              class="w-9 h-9 bg-white"
             />
           </HeadlessMenuButton>
         </HeadlessMenu>
-        <P>JOHN DOE</P>
+        <P class="text-sm">JOHN DOE</P>
+        <P class="text-sm">Admin</P>
 
         <HeadlessMenu as="div" class="relative">
           <HeadlessMenuButton
@@ -90,9 +91,38 @@
             <img
               src="/assets/image/avatar1.png"
               alt="Logged user"
-              class="w-full h-full"
+              class="w-full h-full border-none"
             />
           </HeadlessMenuButton>
+
+          <TransitionScale :scale="0.8" origin="top-right">
+            <HeadlessMenuItems
+              class="absolute z-10 right-0 mt-3 w-48 rounded-md bg-slate-200 focus:outline-none focus-visible:ring-2"
+            >
+              <div class="border-b px-3 py-1.5 text-sm">
+                <p class="font-semibold">Hello John</p>
+                <a
+                  href="mailto:Jimoh.tajudeen1017@gmail.com"
+                  class="leading-none text-muted-foreground"
+                  >JohnDoe@gmail.com</a
+                >
+              </div>
+
+              <div class="p-1">
+                <template v-for="(p, i) in ProfileMenuOption" : key="i">
+                  <HeadlessMenuItem v-slot="{ active }">
+                    <button
+                      @click="p.click?.()"
+                      class="inline-flex w-full items-center rounded-md p-1 text-sm font-meduim"
+                    >
+                      {{ p.title }}
+                    </button>
+                  </HeadlessMenuItem>
+                  <hr v-if="p.divider" class="my-1" />
+                </template>
+              </div>
+            </HeadlessMenuItems>
+          </TransitionScale>
         </HeadlessMenu>
       </div>
     </div>
@@ -105,6 +135,13 @@ const mode = useColorMode();
 const toggleThemes = () => {
   mode.value = mode.value === "light" ? "dark" : "light";
 };
+
+// Item that will be displace in menu
+const ProfileMenuOption = [
+  { title: "View Profile" },
+  { title: "Logout", click: () => alert("Logout") },
+  { divider: true },
+];
 </script>
 
 <style></style>
