@@ -3,6 +3,9 @@
 
     <!-- Headers -->
     <Headers />
+
+    <!-- side bar -->
+    <SideBar />
     <!-- <Header />
     <Welcome />
     <ForgotPassword />
