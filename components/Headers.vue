@@ -82,7 +82,7 @@
           </HeadlessMenuButton>
         </HeadlessMenu>
         <P class="text-sm">JOHN DOE</P>
-        <P class="text-sm font-semibold">Admin</P>
+        <P class="text-sm font-semibold cursor-pointer">Admin</P>
 
         <HeadlessMenu as="div" class="relative">
           <HeadlessMenuButton
